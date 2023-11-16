@@ -1,9 +1,16 @@
     
-body{
-    background-color: #001d3d;
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #6b70b4;
+}body{
+    background-color: #001845d4;
     margin: 0;
     padding: 0;
 }
+
 /* video header */
 
 .video-background {
@@ -31,6 +38,7 @@ table{
     border-collapse: collapse;
     margin-top: 3%;
     width: 100%;
+    
 }
 
 table td{
@@ -161,12 +169,230 @@ input{
 }
 
 
-/* fonds */
+/* fonds blanc */
 .corps{
-    background-color: #ffffff;
-    margin-top: 380px;
+    background-color: rgb(242, 242, 242);
+    margin-top: 362px;
+  height: 500px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.25);
+
+  
+}
+/*slide article*/
+.corps h1{
+    font-size: 50px;
+     ;
+}
+header {
+    padding: 1rem 2rem;
+}
+
+.card {
+    margin-left: 10px;
+
+    border: 2px solid #bac6d3;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+/********************************
+Carousel styles avec sa barre 
+*********************************/
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    list-style-type: none;
+}
+
+.carousel-item {
+    flex: 1 0 300px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+
+/*********************
+Boite des decouverte 
+**********************/
+
+#box {
+    height: 450px;
+    margin: 50px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 20px solid #ea1f33;
+    background-color:rgb(242, 242, 242);
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px
+}
+
+#box  .left {
+    width: 40%;
+}
+#box  .left h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#box  .left h1 span {
+    color: #ea1f33;
+}
+#box  .left p {
+    margin-bottom: 30px;
+    color: #999;
+    font-size: 20px;
+}
+#box  .left a {
+    background-color: #ea1f33;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.5s; 
+    text-decoration: none;
+}
+#box .left a:hover{
+    background-color: #000;
+   
+}
+
+#box .right{
+    width:60%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
     
 }
-.contenu{
-    background-color: #000;
+#box .right img{
+    width: 70%;
 }
+/*****************
+    footer
+******************/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  /*** A MODIFIER */
+
+  
+  .footer-col .social-links a{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+ .bouton{
+  text-decoration: none;
+  outline: none;
+    background: rgb(25, 11, 104);
+    color: #fff;
+}
+.bouton:hover {
+    color: #fff;
+    background: #fc0000;
+    border-color: #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
