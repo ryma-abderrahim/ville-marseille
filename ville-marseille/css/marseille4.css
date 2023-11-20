@@ -4,6 +4,17 @@ body{
     padding: 0;
 }
 
+body{
+    text-align:center;
+}
+
+body:before{
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+}
+
 .image-background {
     position: absolute;
     top: 0;
@@ -173,6 +184,7 @@ input{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(255, 255, 255, 0.699);
+    margin-bottom: 1cm;
 }
 
 .contenu{
@@ -315,6 +327,47 @@ input{
             transform: translateX(-1800px);
   }
   
+  /*button*/
+  .link{
+    margin-bottom: 3cm;
+    padding-bottom: 3cm;
+}
+button{
+    background:rgb(44, 44, 109);
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:#fff;
+    color:rgb(44, 44, 109);
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1a46ab;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
   
 /*****************
             footer
