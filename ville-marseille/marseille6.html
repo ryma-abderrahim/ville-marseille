@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ville-marseille</title>
+    <link rel="stylesheet" href="/css/marseille8.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+<header>
+
+ <table>
+     <tr>
+     <td colspan="2">
+     <div class="menu-wrapper menu-gold">
+          <ul class="menu">
+                      <!-- RUBRIQUE ACCUEIL-->
+            <li><a href="marseille.html"><i class="fas fa-home"></i> | Accueil |</a></li>
+        
+                 <!-- REBRIQUE HISTOIRE-->
+            <li><a href="marseille1.html"> | Histoire de Marseile |</a></li>
+            
+                <!-- RUBRIQUE LISTE DECOUVRIR-->
+           <li> <a href="#"><i class="fas fa-project-diagram"></i> | Découvrir + | </a>
+                <ul>
+                    <li><a href="marseille2.html"> Les Plages</a></li>
+                    <li><a href="marseille3.html"> Les Parc Publics</a></li>
+                    <li><a href="marseille4.html"> Les randonnées</a></li>
+                </ul>
+           </li>
+
+                <!-- RUBRIQUE ANNUAIRE-->
+                        <li><a href="marseille5.html"><i class="fas fa-info-circle"></i> | Annuaire de Musée |</a></li>
+                   
+                <!-- RUBRIQUE CONTACT-->
+            <li><a href="marseille6.html"><i class="fas fa-phone"></i>| Contactez-nous |</a></li>
+                
+                
+                <!-- RUBRIQUE BARRE RECHERCHE-->
+            <form>
+            <input type="search" placeholder="Rechercher">
+            </form>
+         </ul>
+         </div>
+         </td>
+        </tr>
+    
+ </table>
+ </header>
+ <main>
+ <div class="contactez-nous">
+    <h1>Contactez-nous</h1>
+    <p>N'hésitez pas à nous contacter si vous souhaitez solliciter nos services, nous nous efforcerons de répondre rapidement!</p>
+    <form action="/page-traitement-donnees" method="post">
+
+
+<div>
+    <label for="civilité">Civilité</label>
+    <select name="civilité" id="civilité" required>
+    <option value="" disabled selected hidden>Choisissez votre civilité</option>
+    <option value="monsieur">Monsieur</option>
+    <option value="madame">Madame</option>
+    <option value="autre">Autre...</option>
+    </select>
+</div>
+ 
+<div>
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" placeholder="Entrer votre nom" required>
+</div>
+
+<div>
+    <label for="prenom">Prenom</label>
+    <input type="text" id="prenom" name="prenom" placeholder="Entrer votre prenom" required>
+</div>
+
+<div>
+    <label for="email">Votre e-mail</label>
+    <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+  </div>
+
+<div>
+    <label for="message">Votre message</label>
+    <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+  </div>
+
+    <div>
+        <input type="checkbox" id="politique" name="politique" required>
+        <label for="politique">J'accepte les politiques de confidentialité de l'entreprise</label>
+      </div>
+    
+<div>
+    <button type="submit">Envoyer</button>
+</div>
+    </form>
+</div>
+</main>
+<footer class="footer">
+    <div class="container">
+     <div class="row">
+       <div class="footer-col">
+         <h4>lien Rapide</h4>
+         <ul>
+           <li><a href="marseille.html">Accueil</a></li>
+           <li><a href="marseille2.html">Histoire de Marseille</a></li>
+           <li><a href="marseille7.html">Annuaire de Musée</a></li>
+           <li><a href="marseille4.html">Les Plages</a></li>
+           <li><a href="marseille5.html">Les Parc Publics</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Besoin d'aide</h4>
+         <ul>
+           <li><a href="marseille8.html">Contacter Nous</a></li>
+           <li><a href="https://outlook.live.com">mail : ville-marseille@outlook.com</a></li>
+          
+         </ul> 
+        </div>
+         <div class="footer-col">
+            <h4>Suivez-nous</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+         </div>
+         <div class="footer-col">
+            <h4>Newsletter</h4>
+            <div class="newsletter">
+            <ul>
+
+              <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                <button class="bouton" type="submit">S'incrire</button>
+             </form>
+            </ul>
+          </div> 
+        </div>
+      
+     </div>
+    </div>
+</footer>
+</body>
+</html>
